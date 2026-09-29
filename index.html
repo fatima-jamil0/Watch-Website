@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHRONOVA — Luxury Watches</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        };
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         SCROLL PROGRESS
+    ====================================================== -->
+
+    <div id="scrollProgress"></div>
+
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div id="pageLoader">
+
+        <div class="loader-watch">
+
+            <div class="loader-watch-face">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <h2>CHRONOVA</h2>
+        <p>Loading Luxury...</p>
+
+    </div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                CHRONO<span>VA</span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="desktop-nav">
+
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+
+            </nav>
+
+
+            <!-- Actions -->
+
+            <div class="nav-actions">
+
+                <button id="searchBtn" class="nav-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+
+                <button id="themeBtn" class="nav-icon">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+
+                <button id="cartBtn" class="nav-icon cart-button">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span id="cartCount">0</span>
+
+                </button>
+
+
+                <button id="menuBtn" class="menu-btn">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div id="searchBox" class="search-box">
+
+            <div class="search-inner">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="Search your perfect watch..."
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+
+        <div id="mobileMenu" class="mobile-menu">
+
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-background">
+
+                <div class="hero-orb orb-one"></div>
+                <div class="hero-orb orb-two"></div>
+                <div class="hero-ring ring-one"></div>
+                <div class="hero-ring ring-two"></div>
+
+            </div>
+
+
+            <div class="hero-container">
+
+                <!-- Hero Content -->
+
+                <div class="hero-content">
+
+                    <span class="hero-small">
+                        <span></span>
+                        THE ART OF TIME
+                    </span>
+
+
+                    <h1>
+
+                        <span>WEAR</span>
+
+                        <span id="typingText">
+                            Timeless Elegance
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Discover exceptional timepieces crafted
+                        for those who appreciate precision,
+                        elegance and timeless luxury.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#collections" class="primary-btn">
+
+                            Explore Collection
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="#about" class="secondary-btn">
+
+                            Our Story
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Stats -->
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>25+</strong>
+                            <span>Luxury Models</span>
+                        </div>
+
+                        <div>
+                            <strong>4.9</strong>
+                            <span>Customer Rating</span>
+                        </div>
+
+                        <div>
+                            <strong>15Y</strong>
+                            <span>Craftsmanship</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Hero Watch -->
+
+                <div class="hero-visual">
+
+                    <div class="watch-aura"></div>
+
+                    <div class="watch-rings">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+
+                    <div class="hero-watch">
+
+                        <div class="watch-shadow"></div>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=90"
+                            alt="Luxury Watch"
+                        >
+
+                    </div>
+
+
+                    <div class="floating-card">
+
+                        <div class="floating-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+
+                        <div>
+                            <strong>Premium Craft</strong>
+                            <span>Swiss Inspired</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             BRANDS
+        ====================================================== -->
+
+        <section class="brands-section">
+
+            <p>TRUSTED BY WATCH LOVERS WORLDWIDE</p>
+
+            <div class="brands">
+
+                <span>ROLEX</span>
+                <span>OMEGA</span>
+                <span>SEIKO</span>
+                <span>TAG HEUER</span>
+                <span>LONGINES</span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             COLLECTIONS
+        ====================================================== -->
+
+        <section id="collections" class="collections section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        OUR COLLECTION
+                    </span>
+
+                    <h2>
+                        Timeless <em>Masterpieces</em>
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Explore our carefully selected collection
+                    of premium watches designed for every occasion.
+                </p>
+
+            </div>
+
+
+            <!-- Categories -->
+
+            <div class="categories">
+
+                <button
+                    class="category-btn active"
+                    data-category="all"
+                >
+                    All Watches
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="classic"
+                >
+                    Classic
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="sport"
+                >
+                    Sport
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="luxury"
+                >
+                    Luxury
+                </button>
+
+            </div>
+
+
+            <!-- Product Grid -->
+
+            <div id="productGrid" class="product-grid">
+
+
+                <!-- Product 1 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="classic"
+                    data-name="Royal Classic"
+                    data-price="299"
+                    data-image="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=90"
+                >
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            BESTSELLER
+                        </span>
+
+                        <button class="wishlist-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=90"
+                            alt="Royal Classic Watch"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            CLASSIC COLLECTION
+                        </span>
+
+                        <h3 class="product-name">
+                            Royal Classic
+                        </h3>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(128)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong class="product-price">
+                                $299
+                            </strong>
+
+                            <button class="add-to-cart">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Product 2 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="luxury"
+                    data-name="Golden Heritage"
+                    data-price="499"
+                    data-image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=700&q=90"
+                >
+
+                    <div class="product-image">
+
+                        <span class="product-badge premium">
+                            PREMIUM
+                        </span>
+
+                        <button class="wishlist-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=700&q=90"
+                            alt="Golden Heritage Watch"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            LUXURY COLLECTION
+                        </span>
+
+                        <h3 class="product-name">
+                            Golden Heritage
+                        </h3>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(94)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong class="product-price">
+                                $499
+                            </strong>
+
+                            <button class="add-to-cart">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Product 3 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="sport"
+                    data-name="Ocean Runner"
+                    data-price="379"
+                    data-image="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=700&q=90"
+                >
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
+                        <button class="wishlist-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=700&q=90"
+                            alt="Ocean Runner Watch"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            SPORT COLLECTION
+                        </span>
+
+                        <h3 class="product-name">
+                            Ocean Runner
+                        </h3>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(76)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong class="product-price">
+                                $379
+                            </strong>
+
+                            <button class="add-to-cart">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Product 4 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="luxury"
+                    data-name="Midnight Elite"
+                    data-price="699"
+                    data-image="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=700&q=90"
+                >
+
+                    <div class="product-image">
+
+                        <span class="product-badge premium">
+                            ELITE
+                        </span>
+
+                        <button class="wishlist-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=700&q=90"
+                            alt="Midnight Elite Watch"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            LUXURY COLLECTION
+                        </span>
+
+                        <h3 class="product-name">
+                            Midnight Elite
+                        </h3>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(151)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong class="product-price">
+                                $699
+                            </strong>
+
+                            <button class="add-to-cart">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Product 5 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="classic"
+                    data-name="Silver Legacy"
+                    data-price="329"
+                    data-image="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=700&q=90"
+                >
+
+                    <div class="product-image">
+
+                        <button class="wishlist-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=700&q=90"
+                            alt="Silver Legacy Watch"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            CLASSIC COLLECTION
+                        </span>
+
+                        <h3 class="product-name">
+                            Silver Legacy
+                        </h3>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(82)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong class="product-price">
+                                $329
+                            </strong>
+
+                            <button class="add-to-cart">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Product 6 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="sport"
+                    data-name="Aero Sport"
+                    data-price="259"
+                    data-image="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=700&q=90"
+                >
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            HOT
+                        </span>
+
+                        <button class="wishlist-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=700&q=90"
+                            alt="Aero Sport Watch"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            SPORT COLLECTION
+                        </span>
+
+                        <h3 class="product-name">
+                            Aero Sport
+                        </h3>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(63)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong class="product-price">
+                                $259
+                            </strong>
+
+                            <button class="add-to-cart">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section id="about" class="about section">
+
+            <div class="about-image">
+
+                <div class="about-image-inner">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1000&q=90"
+                        alt="Luxury Watch"
+                    >
+
+                </div>
+
+                <div class="experience-box">
+
+                    <strong>15+</strong>
+                    <span>Years Of<br>Craftsmanship</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content reveal">
+
+                <span class="section-label">
+                    OUR PHILOSOPHY
+                </span>
+
+                <h2>
+                    Time Is The Most
+                    <em>Precious Luxury</em>
+                </h2>
+
+                <p>
+                    At CHRONOVA, we believe a watch is more than
+                    an accessory. It is a statement of character,
+                    ambition and timeless style.
+                </p>
+
+                <p>
+                    Every timepiece is carefully selected with
+                    attention to precision, materials and design.
+                </p>
+
+
+                <div class="about-features">
+
+                    <div class="feature-card">
+
+                        <i class="fa-solid fa-gem"></i>
+
+                        <div>
+                            <h4>Premium Materials</h4>
+                            <p>Exceptional quality</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <div>
+                            <h4>Trusted Quality</h4>
+                            <p>Built to last</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#experience" class="primary-btn">
+                    Discover More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EXPERIENCE
+        ====================================================== -->
+
+        <section id="experience" class="experience-section">
+
+            <div class="experience-content">
+
+                <span class="section-label">
+                    THE CHRONOVA EXPERIENCE
+                </span>
+
+                <h2>
+                    Designed To Make
+                    <em>Every Second Count.</em>
+                </h2>
+
+                <p>
+                    From the first glance to every moment after,
+                    CHRONOVA brings elegance and confidence to
+                    your everyday life.
+                </p>
+
+
+                <div class="experience-features">
+
+                    <div>
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Precision</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Authenticity</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             NEWSLETTER
+        ====================================================== -->
+
+        <section class="newsletter">
+
+            <div class="newsletter-content">
+
+                <span class="section-label">
+                    STAY IN TIME
+                </span>
+
+                <h2>
+                    Join The CHRONOVA Circle
+                </h2>
+
+                <p>
+                    Receive new collection announcements,
+                    exclusive offers and luxury watch stories.
+                </p>
+
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                    <button type="submit">
+
+                        Subscribe
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         CART OVERLAY
+    ====================================================== -->
+
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+
+    <!-- =====================================================
+         CART SIDEBAR
+    ====================================================== -->
+
+    <aside id="cartSidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+
+            <div>
+                <span>YOUR SELECTION</span>
+                <h3>Shopping Bag</h3>
+            </div>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div id="cartItems" class="cart-items">
+
+            <!-- JS will insert products -->
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total-row">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+
+            <button class="checkout-btn">
+                Proceed To Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    CHRONO<span>VA</span>
+                </a>
+
+                <p>
+                    Timeless watches for people
+                    who value every second.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About Us</a>
+                <a href="#experience">Experience</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Support</h4>
+
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Warranty</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <a href="mailto:hello@chronova.com">
+                    hello@chronova.com
+                </a>
+
+                <span>
+                    Karachi, Pakistan
+                </span>
+
+                <span>
+                    +92 300 1234567
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CHRONOVA. All Rights Reserved.
+            </p>
+
+            <p>
+                Crafted with precision.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
